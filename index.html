@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>tyler lubke composer-programmer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styles/style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Dosis:600|Dosis|Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+      <script>
+      var intervalID = window.setInterval(myCallback, 500);
+
+      function myCallback() {
+        $("#titlescroll").html(function(){
+          return "<p>test</p>";
+        });
+      };
+      </script>
+
+   </head>
+   <body>
+      <h1>
+         <span style="font-size: 14vmin;">tyler lubke</span><br>
+         <sub style="font-family: Source Code Pro;
+            font-size: 5.35vmin;
+            font-weight: 100;">
+            <div class="progress-ww">
+               <div  style="animation: growIn 1.5s ease-out 250ms 1 normal backwards;">
+                  <span id="titlescroll" onload="changeColor();" style="animation: fadeIn 1.5s ease-in 1s 1 normal backwards;">
+                  composer
+                  </span>
+                  |
+                  <span style="animation: fadeIn 1.5s ease-in 2s 1 normal backwards;">
+                  programmer
+                  </span>
+               </div>
+            </div>
+         </sub>
+      </h1>
+      <div class="home" style="animation: fadeIn 1.5s ease-in 3s 1 normal backwards">
+         <a href="./look.html" style="animation: blink 2.4s ease-in 2s 2 alternate">
+         look
+         </a>
+         <a href="./listen.html">
+            <div class="listen">
+               listen
+            </div>
+         </a>
+      </div>
+   </body>
+   <footer class="footer" style="font-size 3.3vmin;">
+      tyler.lubke@gmail.com<br>
+      <a href="https://www.twitter.com/realTylerLubke/" target="_blank">
+      <i class="fa fa-twitter"></i>
+      </a>
+      |
+      <a href="https://www.instagram.com/tyler.lubke" target="_blank">
+      <i class="fa fa-instagram"></i>
+      </a>
+      |
+      <a href="https://tylerlubke.bandcamp.com" target="_blank">
+      <i class="fa fa-bandcamp"></i>
+      </a>
+   </footer>
+</html>

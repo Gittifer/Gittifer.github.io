@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>tyler lubke composer-programmer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styles/style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Dosis:600|Dosis|Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+      <script src="scripts/scripts.js"></script>
+      <script src="https://github.com/Gittifer/dust/blob/master/scripts/tyler/ekombi.lua"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+             $("#btn1").click(function(){
+               $("#right").html(function(){/*clears screen of previous PDF or image*/
+                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+               });
+               $("#blank").html(function(){/*composition title+description*/
+                   return "<h3>Brass Quintet No. 1</h3>\
+                   <p style='padding:0px 2.5vw 0px 2.5vw;'>This piece draws inspiration from some of the great brass writers such as Victor Ewald and Eric Ewazen as well as works by Malcom Arnold, Jan Bach, and James MacMillan. The first movement is filled with lighthearted and spirited motives. The second movement expands upon extended techniques hinted at in the first. This orderly movement makes use of many soft, overlapping, airy textures which when given life, breath in their own way. The third and last movement is a playful and interruptive installment, written in rondo form. The initial theme is enviously snatched around the ensemble while the quintet searches for a conclusive agreement.</p>";
+               });
+             });
+             $("#btn1a").click(function(){
+               $("#right").html(function(){/*pdf*/
+                   return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
+               });
+             });
+
+             $("#btn2").click(function(){
+               $("#right").html(function(){
+                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+               });
+               $("#blank").html(function(){
+                   return "<h3>Lake Sketch</h3>\
+                   <p style='padding:0px 2.5vw 0px 2.5vw;'>description.</p>";
+               });
+             });
+             $("#btn2a").click(function(){
+               $("#right").html(function(){
+                   return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
+               });
+             });
+
+             $("#btn3").click(function(){
+               $("#right").html(function(){
+                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+               });
+               $("#blank").html(function(){
+                   return "<h3>Fox Only</h3>\
+                   <p style='padding:0px 2.5vw 0px 2.5vw;'>Inspired by the musical chaos created by the clicky controllers of <em> Super Smash Brothers: Melee </em>, this piece explores the improvisitory and extremely rhythmic results of a typical match.<br><br> for one drum (or drum-like instrument), two Nintendo GameCube controllers amplified via contact-mic, and one solo improvised instrument.</p";
+               });
+             });
+             $("#btn3a").click(function(){
+               $("#right").html(function(){
+                   return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
+               });
+             });
+
+             $("#btn4").click(function(){
+               $("#right").html(function(){
+                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+               });
+               $("#blank").html(function(){
+                   return "<h3>So, not... a Sonata?</h3>\
+                   <p style='padding:0px 2.5vw 0px 2.5vw;'>description</p>.";
+               });
+             });
+             $("#btn4a").click(function(){
+               $("#right").html(function(){
+                   return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
+               });
+             });
+
+             $("#btn5").click(function(){
+               $("#right").html(function(){
+                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+               });
+               $("#blank").html(function(){
+                   return "<h3>Cascade</h3>\
+                   <p style='padding:0px 2.5vw 0px 2.5vw;'>description</p>.";
+               });
+             });
+             $("#btn5a").click(function(){
+               $("#right").html(function(){
+                   return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
+               });
+             });
+
+
+             /*code*/
+             $("#btn6").click(function(){
+               $("#right").html(function(){
+                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+               });
+               $("#blank").html(function(){
+                   return "<h3>ekombi</h3>\
+                   <p style='padding:0px 2.5vw 0px 2.5vw;'>video goes here</p>.";
+               });
+             });
+             $("#btn6a").click(function(){
+               $("#right").html(function(){/*display code*/
+                   return "";
+               });
+             });
+         });
+      </script>
+   </head>
+   <body style="animation: fadeIn 800ms">
+      <div class="wrap">
+         <div class="left">
+            <div id="homepage-icon">
+               <a href="index.html">home</a>
+            </div>
+            <div style="height: 300px;">
+               <ul id="compositions" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
+                  compositions
+                  <li>
+                     (2016) <u id="btn1">Brass Quintet No. 1</u> –
+                     Ca. 12’ –
+                     2 C tpt, tbn, f.hn, tba
+                     <br><em>
+                     – p. May 2, 2017 –
+                     Clear Water Brass Quintet  –
+                     Eau Claire, WI
+                     </em>
+                     &nbsp;<i id="btn1a" class="fa fa-file-pdf-o" style="color:red"></i>
+                  </li>
+                  <li>
+                     (2017) <u  id="btn2">Lake Sketch (incomplete)</u> –
+                     Ca. x’ –
+                     orchestra
+                     <br><em>
+                     – p. (sight reading) May 10, 2017 –
+                     UW-Eau Claire University Orchestra
+                     </em>
+                     &nbsp;<i id="btn2a" class="fa fa-file-pdf-o" style="color:red"></i>
+                  </li>
+                  <li>
+                     (2017) <u id="btn3">Fox Only</u> –
+                     Ca. 6’ –
+                     any instrument + perc and live-electronics
+                     <br><em>
+                     – p. May 17, 2017 –
+                     Eau Claire, WI
+                     </em>
+                     <a href"./scores/example.pdf">
+                     &nbsp;<i class="fa fa-file-pdf-o" style="color:red"></i>
+                     </a>
+                  </li>
+                  <li>
+                     (2017) <u id="btn4">So… Not a Sonata?</u> (revision) –
+                     Ca. 6’ –
+                     2 C tpt, tbn, f.h., tba
+                     <br><em>
+                     – p. Unperformed
+                     </em>
+                     &nbsp;<i id="btn4a" class="fa fa-file-pdf-o" style="color:red"></i>
+                  </li>
+                  <li>
+                     (2017) <u id="btn5">Cascade</u> –
+                     Ca. 8’ –
+                     orchestra + pno, sop. sax
+                     <br><em>
+                     – p. February 24, 2018  –
+                     UW-Eau Claire University Orchestra –
+                     Eau Claire, WI
+                     </em>
+                     <a href"./scores/example.pdf">
+                     &nbsp;<i class="fa fa-file-pdf-o" style="color:red"></i>
+                     </a>
+                  </li>
+                  <hr width="100%">
+               </ul>
+               <ul id="code" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
+                  code
+                  <li>
+                     (2018) <u id="btn6">ekombi</u>;
+                     <br><em>
+                     - a polyrhythmic sampler/sequencer – written for Monome's NORNS ecosystem.
+                     </em>
+                     &nbsp;<a href="https://gist.github.com/Gittifer/a3335a9034830db7ec5e096d54f48fc5" target="_blank">
+                     <b id="btn6a" class="fa fa-github"></b>
+                     </a>
+                  </li>
+                  <li>
+                     (2018) <u id="btn7">shapes</u>;
+                     <br><em>
+                     - a strange, visuals based spectral-processing instrument. alter two live-buffers through playful manipulation of time and timbre.
+                     – written for Monome's NORNS ecosystem.
+                     </em>
+                     &nbsp;<b id="btn7a" class="fa fa-github"></b>
+                  </li>
+                  <hr width="100%">
+               </ul>
+               <ul id="pics" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
+                  gallery
+                  <div>
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+                    <img src="./images/portrait.jpg" alt="The man, the myth, the legend" height="20%" width="20%">
+
+
+                  </div>
+                  <hr width="100%">
+               </ul>
+            </div>
+         </div>
+         <div class="right" id="right">
+            <div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;">
+               <img src="./images/portrait.jpg" alt="The man, the myth, the legend" align="left" height="20%" width="20%" hspace="20">
+               lots and lots of biographical information... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </div>
+         </div>
+      </div>
+   </body>
+   <footer class="footer" style="font-size 3.3vmin;">
+      tyler.lubke@gmail.com<br>
+      <a href="https://www.twitter.com/realTylerLubke/" target="_blank">
+      <i class="fa fa-twitter"></i>
+      </a>
+      |
+      <a href="https://www.instagram.com/tyler.lubke" target="_blank">
+      <i class="fa fa-instagram"></i>
+      </a>
+      |
+      <a href="https://tylerlubke.bandcamp.com" target="_blank">
+      <i class="fa fa-bandcamp"></i>
+      </a>
+   </footer>
+</html>
