@@ -4,6 +4,12 @@ html {
   background-color: white /*#F8F7FF*/;
 }
 
+@media only screen and (max-width: 600px) {
+  html{
+    width: 200%;
+  }
+}
+
 h1 {
   font-family: "Dosis", sans-serif;
   font-size: 14vmin;
@@ -38,7 +44,7 @@ p, li, sub, body, h4{
   font-size: 4em;
    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
-     text-align: center;
+     text-align: right;
      position: relative;
       top:15%;
 }
@@ -149,5 +155,14 @@ hr {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    top: 20%;
+  }
+  100%{
+    top:50%;
   }
 }
