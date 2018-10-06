@@ -3,6 +3,7 @@ html {
   color: #443e3b;
   background-color: white /*#F8F7FF*/;
 }
+
 h1 {
   font-family: "Dosis", sans-serif;
   font-size: 14vmin;
@@ -162,7 +163,7 @@ hr {
 
 
 #myBtn {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
