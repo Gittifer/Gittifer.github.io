@@ -8,14 +8,17 @@
       <link href="https://fonts.googleapis.com/css?family=Dosis:600|Dosis|Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
       <style>
       @media only screen and (max-width: 600px) {
-        html{
+        html,body{
           width: 200%;
-          max-width:100;
+          max-width:141.5%;
           overflow-x:hidden;
+        }
+        .viewbutton{
+
         }
       }
       </style>
-      <script src="scripts/scripts.js"></script>
+      <script src="scripts/main.js"></script>
       <script src="https://github.com/Gittifer/dust/blob/master/scripts/tyler/ekombi.lua"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
@@ -182,7 +185,8 @@
                   <li>
                      (2018) <u id="btn6">ekombi</u>;
                      <br><em>
-                     - a polyrhythmic sampler/sequencer – written for Monome's NORNS ecosystem.
+                     - a polyrhythmic sampler/sequencer
+                     <br> – written for Monome's NORNS ecosystem.
                      </em>
                      &nbsp;<a href="https://gist.github.com/Gittifer/a3335a9034830db7ec5e096d54f48fc5" target="_blank">
                      <b id="btn6a" class="fa fa-github" style="color:darkblue"></b>
@@ -191,7 +195,10 @@
                   <li>
                      (2018) <u id="btn7">shapes</u>;
                      <br><em>
-                     - a strange, visuals based spectral-processing instrument. alter two live-buffers through playful manipulation of time and timbre.
+                     - a strange, visuals based spectral-processing instrument.
+                     <br>
+                     alter two live-buffers through playful manipulation of time and timbre.
+                     <br>
                      – written for Monome's NORNS ecosystem.
                      </em>
                      &nbsp;<b id="btn7a" class="fa fa-github" style="color:dar"></b>
@@ -201,7 +208,7 @@
                <ul id="pics" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
                   other projects
                   <div>
-
+                    <button onclick="scrollSide()" id="myBtn">></button>
                   </div>
                   <hr width="100%">
                </ul>
