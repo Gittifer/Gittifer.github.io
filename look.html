@@ -16,6 +16,12 @@
         #myBtn{
           display:block;
         }
+        .vl{
+          display:none;
+        }
+        .footer{
+          left:0; right: 50%;
+        }
       }
       </style>
       <script src="scripts/main.js"></script>
@@ -133,8 +139,14 @@
       <div class="wrap">
         <div class="vl" style="animation: growIn 1s 0s 1; height:90vh;"></div>
          <div class="left"  style="animation: fadeIn 800ms 1s 1 backwards">
-            <div id="homepage-icon">
-               <a href="index.html" class="fa fa-angle-left" style="font-size: 36px; margin: 2.5vw 2.5vw 0px 2.5vw"></a>
+            <div id="homepage-icon ">
+               <a href="index.html" class="fa fa-angle-left" style="font-size: 36px; margin: 2.5vw 2.5vw 0px 2.5vw">
+               </a>
+               <br>
+               <br>
+               <span style="margin: 2.5vw 2.5vw 0 2.5vw">
+               (click titles for description, icons for more information)
+               </span>
             </div>
             <div>
                <ul id="compositions" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
@@ -195,7 +207,7 @@
                <ul id="code" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
                   code
                   <li>
-                     (2018) <u id="btn6">ekombi</u>;
+                     (<b>LUA/SuperCollider</b>) <u id="btn6">ekombi</u>;
                      <br><em>
                      - a polyrhythmic sampler/sequencer
                      <br> – written for Monome's NORNS ecosystem.
@@ -205,7 +217,7 @@
                      </a>
                   </li>
                   <li>
-                     (2018) <u id="btn7">shapes</u>;
+                     (<b>LUA/SuperCollider</b>) <u id="btn7">shapes</u>;
                      <br><em>
                      - a strange, visuals based spectral-processing instrument.
                      <br>
@@ -218,9 +230,14 @@
                   <hr width="100%">
                </ul>
                <ul id="pics" style="text-align: left; padding: 0px 2.5vw 0px 2.5vw">
-                  other projects
+                  projects
+                  <li>
+                    DIY Electro-magnetic Microphone
+                  </li>
                   <div>
-                    <button onclick="scrollSide()" id="myBtn"><></button>
+                    <button onclick="scrollSide()" id="myBtn">
+                      <i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i>
+                    </button>
                   </div>
                   <hr width="100%">
                </ul>
@@ -229,7 +246,13 @@
          <div id="right" class="right" style="animation: fadeIn 800ms 1s 1 backwards">
             <div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;">
                <img src="./images/portrait.jpg" alt="The man, the myth, the legend" align="left" height="20%" width="20%" hspace="20">
-               lots and lots of biographical information... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+               Tyler Lubke was born, raised and currently resides in Iowa
+               Hailing from the dritftless region, he now makes his home in Iowa City as a
+               multi-instrumentalist, composer, programmer, and a hobbyist of too many things for his own good.
+               <br>
+               <br>
+               At the moment, Tyler studies Double Bass and Computer Science at the University of Iowa, and particularly enjoys
+               finding ways to combine his interests in music, visual arts, and programming.
             </div>
          </div>
       </div>

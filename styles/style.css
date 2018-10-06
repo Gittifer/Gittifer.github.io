@@ -25,13 +25,16 @@ h3, ol, ul {
   font-weight: 100;
   text-align: left;
   padding-left: 2.5vw;
+  margin: 0 0 0 0;
 }
 
 p, li, sub, body, h4{
+  color: #443e3c;
   font-family:  "Source Sans Pro", sans-serif;
   font-size: 2.05vmin; /* .618 of h2 */
   font-weight: 100;
   text-align: left;
+  list-style-type: none;
 }
 
 .home {
@@ -165,10 +168,11 @@ hr {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
+    bottom: 12px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
+    border: 1px solid #443e3c; /* Remove borders */
+    background:white;
     outline: none; /* Remove outline */
     color: black; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
