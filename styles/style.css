@@ -3,13 +3,11 @@ html {
   color: #443e3b;
   background-color: white /*#F8F7FF*/;
 }
-
 @media only screen and (max-width: 600px) {
   html{
     width: 200%;
   }
 }
-
 h1 {
   font-family: "Dosis", sans-serif;
   font-size: 14vmin;
