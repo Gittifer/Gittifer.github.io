@@ -34,6 +34,15 @@ p, li, sub, body, h4{
   text-align: left;
 }
 
+.home {
+  font-size: 4em;
+   font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+     text-align: center;
+     position: relative;
+      top:15%;
+}
+
 body {/*box!*/
   min-height:100%;
   position:relative;
@@ -42,8 +51,6 @@ body {/*box!*/
   margin: 0 auto;
   background-color: none;
 }
-
-
 
 footer {
     background-color: white;
@@ -99,21 +106,8 @@ hr {
     left: 50%;
 }
 
-.home {
-  font-size: 4em;
-   font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 100;
-     text-align: center;
-     position: relative;
-      top:15%;
-}
-
 .wrap {
   display: flex;
-}
-
-.wrap .row.content {
-  flex: 1 1 auto;
 }
 
 .left {
