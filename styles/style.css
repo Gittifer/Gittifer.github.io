@@ -1,6 +1,6 @@
 html {
   height: 90%;
-  color: #443e3b;
+  color: #463d49;
   background-color: white /*#F8F7FF*/;
 }
 
@@ -29,7 +29,7 @@ h3, ol, ul {
 }
 
 p, li, sub, body, h4{
-  color: #443e3c;
+  color: #463d49;
   font-family:  "Source Sans Pro", sans-serif;
   font-size: 2.05vmin; /* .618 of h2 */
   font-weight: 100;
@@ -38,12 +38,22 @@ p, li, sub, body, h4{
 }
 
 .home {
+  color:#aca5af;
   font-size: 4em;
    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
      text-align: right;
      position: relative;
       top:15%;
+}
+
+.homeoption{
+  transition:400ms;
+}
+
+.homeoption:hover{
+  color:#463d49;
+  transition:400ms;
 }
 
 body {/*box!*/
@@ -59,7 +69,7 @@ footer {
     background-color: white;
     border-top-style: solid;
     border-top-width: 1px;
-    border-color, color: #443e3c;
+    border-color, color: #463d49;
     padding: 1.25vw;
     font-family: 'Source Code Pro', monospace;
     font-size: 1em;
@@ -97,12 +107,12 @@ u,i:hover{
 }
 
 hr {
-  /*background-color: #443e3c;*/
-  border: 0.5px solid #443e3c;
+  /*background-color: #463d49;*/
+  border: 0.5px solid #463d49;
 }
 
 .vl {
-    border-left: 1px solid #443e3c;
+    border-left: 1px solid #463d49;
     height: 6vmin;
     position: relative;
     top: 0;
@@ -155,12 +165,12 @@ hr {
   }
 }
 
-@keyframes slideIn {
+@keyframes float {
   0% {
-    top: 20%;
+    transform:none;
   }
   100%{
-    top:50%;
+    transform: translate(2px,0px);
   }
 }
 
@@ -171,7 +181,7 @@ hr {
     bottom: 12px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
-    border: 1px solid #443e3c; /* Remove borders */
+    border: 1px solid #463d49; /* Remove borders */
     background:white;
     outline: none; /* Remove outline */
     color: black; /* Text color */
