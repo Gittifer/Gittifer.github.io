@@ -47,11 +47,16 @@ p, li, sub, body, h4{
       top:15%;
 }
 
-.homeoption{
+.selectoption,
+.fa.fa-angle-left,
+.fa.fa-angle-right{
+  color:#aca5af;
   transition:400ms;
 }
 
-.homeoption:hover{
+.selectoption:hover,
+.fa.fa-angle-left:hover,
+.fa.fa-angle-right:hover{
   color:#463d49;
   transition:400ms;
 }
