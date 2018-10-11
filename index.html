@@ -6,29 +6,33 @@
       <link href="styles/style.css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Dosis:600|Dosis|Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
       <script>
-      var intervalID = window.setInterval(myCallback, 500);
+      var intervalID = window.setInterval(myCallback, 5000);
+      var title = ['composer ','double-bassist ','musician '];
+
+
 
       function myCallback() {
         $("#titlescroll").html(function(){
-          return "<p>test</p>";
+          var randomItem = title[Math.floor(Math.random()*title.length)];
+          return randomItem + '&nbsp;&nbsp;         <div class="vl" style="animation: shrinkIn 1s 1 backwards"></div>';
         });
       };
       </script>
 
    </head>
    <body>
-    <h1 style="animation: fadeIn 1s">
-       &thinsp;&hairsp;&hairsp;&hairsp;&hairsp;&hairsp;tyler lubke
-       <br>
-    </h1>
       <div class='wrap'>
-        <div class="vl" style="animation: shrinkIn 1s 1 backwards"></div>
-        <div class="left" style="background-color: white;border-right: none; height:60vh; text-align:right;">
-          <span style="animation: fadeIn 1s 1s 1 backwards; font-size: 4vmin;">
+        <div class="left" style="background-color: white;border-right: none; text-align:right;">
+          <h1 style="animation: fadeIn 1s">
+            tyler&thinsp;
+          </h1>
+          <span id="titlescroll" style="animation: fadeIn 1s 1s 1 backwards; font-size: 4vmin;">
             composer
             &nbsp;
             &nbsp;
+            <div class="vl" style="animation: shrinkIn 1s 1 backwards"></div>
           </span>
           <div style="padding-left:2.5vw;">
             <h4 style="animation: fadeIn 1s 3s 1 backwards; color:#aca5af">
@@ -47,6 +51,9 @@
           </div>
         </div>
         <div class="right" style="background-color: white;">
+          <h1 style="animation: fadeIn 1s">
+            &thinsp;lubke
+          </h1>
           <span style="animation: fadeIn 1s 1.5s 1 backwards; font-size: 4vmin;">
             &nbsp;
             &nbsp;

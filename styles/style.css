@@ -8,7 +8,6 @@ h1 {
   font-family: "Dosis", sans-serif;
   font-size: 14vmin;
   font-weight: 800;
-  text-align: center;
   margin-bottom:0;
 }
 
@@ -16,7 +15,6 @@ h2 {
   font-family:  "Dosis", sans-serif;
   font-size: 4em; /* .618 of h1 */
   font-weight: normal;
-  text-align: center;
 }
 
 h3, ol, ul {
@@ -117,11 +115,12 @@ hr {
 }
 
 .vl {
+    display: inline;
     border-left: 1px solid #463d49;
     height: 6vmin;
     position: relative;
-    top: 0;
-    left: 50%;
+    top:0px;
+    left:0px;
 }
 
 .wrap {
