@@ -41,8 +41,9 @@ p, li, sub, body, h4{
    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
      text-align: right;
-     position: relative;
-      top:15%;
+     position:absolute;
+      bottom:14vmin;
+      right:0px;
 }
 
 .selectoption,
