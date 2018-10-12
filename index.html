@@ -14,8 +14,8 @@
           <h1 style="animation: fadeIn 1s">
             tyler&thinsp;
           </h1>
-          <div id="titlescroll" style="animation: fadeIn 1s 1s 1 backwards; font-size: 4vmin;">
-            composer &nbsp;&nbsp;
+          <div id="titlescroll" style="animation: fadeIn 1s 1s 1 backwards; font-size: 4vmin; padding-right:2.5vmin;">
+            composer
           </div>
           <div style="padding-left:2.5vw;">
             <h4 style="animation: fadeIn 1s 3s 1 backwards; color:#aca5af">
@@ -37,8 +37,8 @@
           <h1 style="animation: fadeIn 1s">
             &thinsp;lubke
           </h1>
-          <span style="animation: fadeIn 1s 1.5s 1 backwards; font-size: 4vmin;">
-            &nbsp;&nbsp; programmer
+          <span style="animation: fadeIn 1s 1.5s 1 backwards; font-size: 4vmin; padding-left:2.5vmin;">
+            programmer
           </span>
           <div class="home" style="animation: fadeIn 4.5s 0s 1 backwards; padding-right:2.5vw;">
             <div>
@@ -68,7 +68,7 @@
 
    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
    <script>
-   var intervalID = window.setInterval(myCallback, 500);
+   var intervalID = window.setInterval(myCallback, 4000);
    var cycle = 0;
    var title = ['composer ',
    'double-bassist ',
@@ -78,7 +78,7 @@
    function myCallback() {
      $("#titlescroll").html(function(){
        cycle = cycle + 1;
-       return title[cycle%title.length] + '&nbsp;&nbsp;';
+       return title[cycle%title.length];
      });
    };
    </script>
