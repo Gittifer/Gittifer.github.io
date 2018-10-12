@@ -9,3 +9,8 @@ function scrollSide() {
     document.body.scrollLeft = leftright*10000; // For Safari
     document.documentElement.scrollLeft = leftright*10000; // For Chrome, Firefox, IE and Opera
 }
+
+// Disable scrolling.
+document.ontouchmove = function (e) {
+  e.preventDefault();
+}

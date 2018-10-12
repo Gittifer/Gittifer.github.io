@@ -115,12 +115,11 @@ hr {
 }
 
 .vl {
-    display: inline;
     border-left: 1px solid #463d49;
     height: 6vmin;
     position: relative;
-    top:0px;
-    left:0px;
+    top:27vmin;
+    left:50%;
 }
 
 .wrap {
