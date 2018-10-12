@@ -24,115 +24,6 @@
         }
       }
       </style>
-      <script src="scripts/main.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script>
-         $(document).ready(function(){
-             $("#btn1").click(function(){
-               $("#right").html(function(){/*clears screen of previous PDF or image*/
-                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
-               });
-               $("#blank").html(function(){/*composition title+description*/
-                   return "<h3>Brass Quintet No. 1</h3>\
-                   <p style='padding:0px 2.5vw 0px 2.5vw;'>This piece draws inspiration from some of the great brass writers such as Victor Ewald and Eric Ewazen as well as works by Malcom Arnold, Jan Bach, and James MacMillan. The first movement is filled with lighthearted and spirited motives. The second movement expands upon extended techniques hinted at in the first. This orderly movement makes use of many soft, overlapping, airy textures which when given life, breath in their own way. The third and last movement is a playful and interruptive installment, written in rondo form. The initial theme is enviously snatched around the ensemble while the quintet searches for a conclusive agreement.</p>";
-               });
-               scrollSide();
-             });
-             $("#btn1a").click(function(){
-               $("#right").html(function(){/*pdf*/
-                   return '<embed src="./scores/brass-quintet-no1.pdf" width="100%"; height="89.5%"; />';
-               });
-               scrollSide();
-             });
-
-             $("#btn2").click(function(){
-               $("#right").html(function(){
-                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
-               });
-               $("#blank").html(function(){
-                   return "<h3>Lake Sketch</h3>\
-                   <p style='padding:0px 2.5vw 0px 2.5vw;'>description.</p>";
-               });
-               scrollSide();
-             });
-             $("#btn2a").click(function(){
-               $("#right").html(function(){
-                   return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
-               });
-               scrollSide();
-             });
-
-             $("#btn3").click(function(){
-               $("#right").html(function(){
-                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
-               });
-               $("#blank").html(function(){
-                   return "<h3>Fox Only</h3>\
-                   <p style='padding:0px 2.5vw 0px 2.5vw;'>Inspired by the musical chaos created by the clicky controllers of <em> Super Smash Brothers: Melee </em>, this piece explores the improvisitory and extremely rhythmic results of a typical match.<br><br> for one drum (or drum-like instrument), two Nintendo GameCube controllers amplified via contact-mic, and one solo improvised instrument.</p";
-               });
-               scrollSide();
-             });
-             $("#btn3a").click(function(){
-               $("#right").html(function(){
-                   return '<embed src="./scores/fox-only.pdf" width="100%"; height="89.5%"; />';
-               });
-               scrollSide();
-             });
-
-             $("#btn4").click(function(){
-               $("#right").html(function(){
-                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
-               });
-               $("#blank").html(function(){
-                   return "<h3>So, not... a Sonata?</h3>\
-                   <p style='padding:0px 2.5vw 0px 2.5vw;'>description</p>.";
-               });
-               scrollSide();
-             });
-             $("#btn4a").click(function(){
-               $("#right").html(function(){
-                   return '<embed src="./scores/so-not-a-sonata.pdf" width="100%"; height="89.5%"; />';
-               });
-               scrollSide();
-             });
-
-             $("#btn5").click(function(){
-               $("#right").html(function(){
-                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
-               });
-               $("#blank").html(function(){
-                   return "<h3>Cascade</h3>\
-                   <p style='padding:0px 2.5vw 0px 2.5vw;'>description</p>.";
-               });
-               scrollSide();
-             });
-             $("#btn5a").click(function(){
-               $("#right").html(function(){
-                   return '<embed src="./scores/cascade.pdf" width="100%"; height="89.5%"; />';
-               });
-               scrollSide();
-             });
-
-
-             /*code*/
-             $("#btn6").click(function(){
-               $("#right").html(function(){
-                 return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
-               });
-               $("#blank").html(function(){
-                   return "<h3>ekombi</h3>\
-                   <p style='padding:0px 2.5vw 0px 2.5vw;'>video goes here</p>.";
-               });
-               scrollSide();
-             });
-             $("#btn6a").click(function(){
-               $("#right").html(function(){/*display code*/
-                   return "";
-               });
-               scrollSide();
-             });
-         });
-      </script>
    </head>
    <body>
       <div class="wrap">
@@ -275,4 +166,113 @@
          </a>
       </footer>
    </body>
+   <script src="scripts/main.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("#right").html(function(){/*clears screen of previous PDF or image*/
+              return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+            });
+            $("#blank").html(function(){/*composition title+description*/
+                return "<h3>Brass Quintet No. 1</h3>\
+                <p style='padding:0px 2.5vw 0px 2.5vw;'>This piece draws inspiration from some of the great brass writers such as Victor Ewald and Eric Ewazen as well as works by Malcom Arnold, Jan Bach, and James MacMillan. The first movement is filled with lighthearted and spirited motives. The second movement expands upon extended techniques hinted at in the first. This orderly movement makes use of many soft, overlapping, airy textures which when given life, breath in their own way. The third and last movement is a playful and interruptive installment, written in rondo form. The initial theme is enviously snatched around the ensemble while the quintet searches for a conclusive agreement.</p>";
+            });
+            scrollSide();
+          });
+          $("#btn1a").click(function(){
+            $("#right").html(function(){/*pdf*/
+                return '<embed src="./scores/brass-quintet-no1.pdf" width="100%"; height="89.5%"; />';
+            });
+            scrollSide();
+          });
+
+          $("#btn2").click(function(){
+            $("#right").html(function(){
+              return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+            });
+            $("#blank").html(function(){
+                return "<h3>Lake Sketch</h3>\
+                <p style='padding:0px 2.5vw 0px 2.5vw;'>description.</p>";
+            });
+            scrollSide();
+          });
+          $("#btn2a").click(function(){
+            $("#right").html(function(){
+                return '<embed src="./scores/test.pdf" width="100%"; height="89.5%"; />';
+            });
+            scrollSide();
+          });
+
+          $("#btn3").click(function(){
+            $("#right").html(function(){
+              return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+            });
+            $("#blank").html(function(){
+                return "<h3>Fox Only</h3>\
+                <p style='padding:0px 2.5vw 0px 2.5vw;'>Inspired by the musical chaos created by the clicky controllers of <em> Super Smash Brothers: Melee </em>, this piece explores the improvisitory and extremely rhythmic results of a typical match.<br><br> for one drum (or drum-like instrument), two Nintendo GameCube controllers amplified via contact-mic, and one solo improvised instrument.</p";
+            });
+            scrollSide();
+          });
+          $("#btn3a").click(function(){
+            $("#right").html(function(){
+                return '<embed src="./scores/fox-only.pdf" width="100%"; height="89.5%"; />';
+            });
+            scrollSide();
+          });
+
+          $("#btn4").click(function(){
+            $("#right").html(function(){
+              return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+            });
+            $("#blank").html(function(){
+                return "<h3>So, not... a Sonata?</h3>\
+                <p style='padding:0px 2.5vw 0px 2.5vw;'>description</p>.";
+            });
+            scrollSide();
+          });
+          $("#btn4a").click(function(){
+            $("#right").html(function(){
+                return '<embed src="./scores/so-not-a-sonata.pdf" width="100%"; height="89.5%"; />';
+            });
+            scrollSide();
+          });
+
+          $("#btn5").click(function(){
+            $("#right").html(function(){
+              return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+            });
+            $("#blank").html(function(){
+                return "<h3>Cascade</h3>\
+                <p style='padding:0px 2.5vw 0px 2.5vw;'>description</p>.";
+            });
+            scrollSide();
+          });
+          $("#btn5a").click(function(){
+            $("#right").html(function(){
+                return '<embed src="./scores/cascade.pdf" width="100%"; height="89.5%"; />';
+            });
+            scrollSide();
+          });
+
+
+          /*code*/
+          $("#btn6").click(function(){
+            $("#right").html(function(){
+              return '<div id="blank" style="padding-top:2.5vw; padding-bottom: 2.5vw; padding-left: 1.25vw; padding-right: 1.25vw;"></div>';
+            });
+            $("#blank").html(function(){
+                return "<h3>ekombi</h3>\
+                <p style='padding:0px 2.5vw 0px 2.5vw;'>video goes here</p>.";
+            });
+            scrollSide();
+          });
+          $("#btn6a").click(function(){
+            $("#right").html(function(){/*display code*/
+                return "";
+            });
+            scrollSide();
+          });
+      });
+   </script>
 </html>

@@ -5,24 +5,6 @@
 <link href="styles/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dosis:600|Dosis|Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script>
-
-var intervalID = window.setInterval(myCallback, 8000);
-var cycle = 0;
-var caption = ['take a second to listen to the world around you...',
-'what do you hear?',
-'it\'s wonderful isn\'t it?',
-];
-
-function myCallback() {
-  $("#captionscroll").html(function(){
-    cycle = cycle + 1;
-    return caption[cycle];
-  });
-};
-
-</script>
 <style>
 @media only screen and (max-width: 600px) {
   html,body{
@@ -66,4 +48,22 @@ function myCallback() {
      </a>
   </footer>
 </body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+
+var intervalID = window.setInterval(myCallback, 8000);
+var cycle = 0;
+var caption = ['take a second to listen to the world around you...',
+'what do you hear?',
+'it\'s wonderful isn\'t it?',
+];
+
+function myCallback() {
+  $("#captionscroll").html(function(){
+    cycle = cycle + 1;
+    return caption[cycle];
+  });
+};
+
+</script>
 </html>
