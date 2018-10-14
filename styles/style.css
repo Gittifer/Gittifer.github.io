@@ -11,13 +11,7 @@ h1 {
   margin-bottom:0;
 }
 
-h2 {
-  font-family:  "Dosis", sans-serif;
-  font-size: 4em; /* .618 of h1 */
-  font-weight: normal;
-}
-
-h3, ol, ul {
+h2, ol, ul {
   font-family:  "Source Sans Pro", sans-serif;
   font-size: 8.5vmin; /* .618 of h2 */
   font-weight: 100;
@@ -26,7 +20,7 @@ h3, ol, ul {
   margin: 0 0 0 0;
 }
 
-p, li, sub, body, h4{
+p, li, sub, body, h3{
   color: #463d49;
   font-family:  "Source Sans Pro", sans-serif;
   font-size: 2.05vmin; /* .618 of h2 */
@@ -48,31 +42,39 @@ footer {
     background-color: white;
     border-top-style: solid;
     border-top-width: 1px;
-    border-color, color: #463d49;
+    border-color: #463d49;
+    color: #463d49;
     padding: 1.25vw;
     font-family: 'Source Code Pro', monospace;
-    font-size: 1em;
+    font-size: 3vh;
     text-align: center;
 }
 .footer { /* sticky footer*/
     position: absolute;
-    left: 0 ; right: 0; bottom: 0;
-    height:[footer-height];
+    left: 0 ;
+    right: 0;
+    bottom: 0;
 }
 
 .home {
   color:#aca5af;
-  font-size: 4em;
-   font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 100;
-     text-align: right;
-     position:absolute;
-      bottom:14vmin;
-      right:0px;
+  font-size: 12vmin;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  text-align: right;
+  margin:2.5vmin;
+  position:absolute;
+  bottom:10%;
+  right:0px;
+}
+
+a {
+  color:#aca5af;
+  transition:400ms;
 }
 
 a:link {/* link styles */
-  color: inherit;
+  color:inherit;
   background-color: transparent;
   text-decoration: none;
 }
@@ -82,7 +84,8 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-color: inherit;
+  color:#463d49;
+  transition:400ms;
 background-color: transparent;
 text-decoration: none;
 }
@@ -94,20 +97,6 @@ a:active {
 
 u,i:hover{
   cursor: pointer;
-}
-
-.selectoption,
-.fa.fa-angle-left,
-.fa.fa-angle-right{
-  color:#aca5af;
-  transition:400ms;
-}
-
-.selectoption:hover,
-.fa.fa-angle-left:hover,
-.fa.fa-angle-right:hover{
-  color:#463d49;
-  transition:400ms;
 }
 
 hr {
@@ -182,7 +171,7 @@ hr {
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 12px; /* Place the button at the bottom of the page */
+    bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: 1px solid #463d49; /* Remove borders */
