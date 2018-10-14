@@ -1,5 +1,11 @@
+@media only screen and (max-width: 600px) {
+  body{
+    height:90%
+  }
+}
+
 html {
-  height: 90%;
+  height: 100%;
   color: #463d49;
   background-color: white /*#F8F7FF*/;
 }
@@ -32,8 +38,7 @@ p, li, sub, body, h3{
 body {/*box!*/
   min-height:100%;
   position:relative;
-  padding-bottom:[footer-height]
-  width: 95vmin;
+  padding-bottom:auto;
   margin: 0 auto;
   background-color: none;
 }
