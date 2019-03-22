@@ -1,4 +1,16 @@
+<?php
+require_once '../Mobile_Detect.php';
+$detect = new Mobile_Detect;
 
+$check = $detect->isMobile();
+  if($check == true){
+    header('Location: index.html');
+    exit;
+  } else {
+    header('Location: mobile/index.html');
+    exit;
+  }
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -23,19 +35,7 @@
       </style>
    </head>
    <body>
-     <?php
-     require_once '../Mobile_Detect.php';
-     $detect = new Mobile_Detect;
 
-     $check = $detect->isMobile();
-       if($check == true){
-         header('Location: index.html');
-         exit;
-       } else {
-         header('Location: mobile/index.html');
-         exit;
-       }
-     ?>
       <div class='wrap'>
         <div class="vl" style=" animation: shrinkIn 1s 1 backwards"></div>
         <div class="left" style="background-color: white;border-right: none; text-align:right;">
