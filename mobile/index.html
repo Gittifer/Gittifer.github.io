@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>tyler lubke composer-programmer</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styles/style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Dosis:600|Dosis|Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+   </head>
+   <body style="height: 100vh;">
+     <div id="top" style="height: 33.333%">
+       <div class="home" style="animation: fadeIn 4.5s 0s 1 backwards;">
+         <div>
+         <a href="look.html" class="selectoption"><i class="fa fa-angle-up" style="animation: float 1s 0s ease-out infinite alternate;"></i></br>look</a>
+         </div>
+     </div>
+   </div>
+     <div id="mid" style="height: 33.333%">
+         <div style="position: fixed; top: 40%; right: 50%;">
+         <h1 style="animation: fadeIn 1s; padding-right: 2.5vmin;">
+           tyler
+         </h1>
+         <div id="titlescroll" style="animation: fadeIn 1s 1s 1 backwards; text-align: right; font-size: 4vmin; padding-right: 2.5vmin;">
+           composer
+         </div>
+         <div class="vl" style=" animation: shrinkIn 1s 1 backwards"></div>
+         </div>
+         <div style="position: fixed; top: 40%; left: 50%;">
+         <h1 style="animation: fadeIn 1s; padding-left: 2.5vmin;">
+           lubke
+         </h1>
+         <div style="animation: fadeIn 1s 1.5s 1 backwards; font-size: 4vmin; padding-left: 2.5vmin;">
+           programmer
+         </div>
+         </div>
+       </div>
+          <div id="bottom" style="height: 33.333%">
+         <div class="home" style="position: absolute; bottom:0px;">
+         <a href="listen.html" class="selectoption">listen</br><i class="fa fa-angle-down" style="animation: float 800ms 200ms ease-out infinite alternate; rotation: 90;"></i></a>
+         </div>
+       </div>
+   </body>
+
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+   <script>
+   var intervalID = window.setInterval(myCallback, 4000);
+   var cycle = 0;
+   var title = ['composer',
+   'double-bassist',
+   ];
+
+
+   function myCallback() {
+     $("#titlescroll").html(function(){
+       cycle = cycle + 1;
+       return title[cycle%title.length];
+     });
+   };
+   </script>
+
+</html>

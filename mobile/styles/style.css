@@ -1,0 +1,167 @@
+html {
+  color: #463d49;
+  background-color: white /*#F8F7FF*/;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 14vmin;
+  font-weight: 800;
+  margin-bottom:0;
+  margin-top:0;
+}
+
+h2, ol, ul {
+  font-family:  "Source Sans Pro", sans-serif;
+  font-size: 11px; /* .618 of h2 */
+  font-weight: 100;
+  text-align: left;
+  margin: 0 10% 0 10%;
+  padding: 11px 0 0 0;
+}
+
+p, li, sub, body, h3{
+  color: #463d49;
+  font-family:  "Source Sans Pro", sans-serif;
+  font-size: 9px; /* .618 of h2 */
+  font-weight: 100;
+  text-align: justify;
+  list-style-type: none;
+}
+
+body {/*box!*/
+  min-height:100%;
+  position:relative;
+  padding-bottom:auto;
+  margin: 0 auto;
+  background-color: none;
+}
+
+footer {
+    background-color: white;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: #463d49;
+    color: #463d49;
+    padding: 1.25vw;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3vh;
+    text-align: center;
+}
+.footer { /* sticky footer*/
+    z-index:98;
+    position: absolute;
+    left: 0 ;
+    right: 0;
+    bottom: 0;
+}
+
+.home {
+  color:#aca5af;
+  font-size: 12vmin;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  width: 50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+a {
+  color:#aca5af;
+  transition:400ms;
+}
+
+a:link {/* link styles */
+  color:inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color:#463d49;
+  transition:400ms;
+background-color: transparent;
+text-decoration: none;
+}
+a:active {
+  color: #463d49;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+u,i:hover{
+  cursor: pointer;
+}
+
+hr {
+  /*background-color: #463d49;*/
+  border: 0.5px solid #463d49;
+}
+
+.vl {
+    z-index: 97;
+    border-left: 1px solid #463d49;
+    height: 4.5vmin;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+
+
+
+@keyframes growIn {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shrinkIn {
+  0% {
+    transform: scale(1,40);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform:none;
+  }
+  100%{
+    transform: translate(0px,2px);
+  }
+}
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 33px; /* Place the button at the bottom of the page */
+    right: 33px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px solid #463d49; /* Remove borders */
+    background:white;
+    outline: none; /* Remove outline */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+}
